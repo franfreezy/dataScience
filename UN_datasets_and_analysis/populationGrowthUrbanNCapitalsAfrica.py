@@ -10,6 +10,14 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
     reader2 = csv.reader(csvfile2)
     next(reader1) #skips the header
     next(reader2)
-
+    
+    country=[]
+    
     for row in reader1:
-        print(row[0]) 
+        country.append(row[0])
+
+    for data in reader2:
+        countryname=data[1]
+        if countryname in country:
+            print(countryname)
+        

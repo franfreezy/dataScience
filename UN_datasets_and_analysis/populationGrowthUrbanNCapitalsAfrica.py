@@ -18,7 +18,7 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
 
     for data in reader2:
         countryname=data[1]
-        requireddata=data[1:6]
+        requireddata=[data[1],data[2],data[4],data[6]]
         capitalpopln='Capital city population (thousands)'
         if countryname in country:
 

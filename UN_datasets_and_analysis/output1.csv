@@ -1,7 +1,4 @@
-Country,2005,city,0
-Country,2010,city,0
-Country,2015,city,0
-Country,2018,city,0
+Country,year,city,population
 Algeria,2005,Algiers,"2,282"
 Algeria,2010,Algiers,"2,432"
 Algeria,2015,Algiers,"2,592"

@@ -62,24 +62,20 @@ with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as cs
             writer.writerow([country, year, city, population])
     
 #refine the output with the blanks filled up                    
-                
-    
+v1csv = 'output.csv'
+v2csv='output1.csv'
+with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as csvfile2:
+    reader = list(csv.reader(csvfile2))
+    writer = csv.writer(csvfile)               
+    writer.writerow(['Country', 'year', 'city', 'population',])
+    writer.writerows(reader[4:])
        
                
 
 
 csv_file = "output.csv"
 
-# Open the file in write mode
-#with open(csv_file, mode='w', newline='') as file:
-#    writer = csv.writer(file)
-#    
-#   
-#    writer.writerow(['City', '2005', '2010', '2015', '2018',])
-#    
-#   
-#    for (key1, value1), (key2, value2), (key3, value3), (key4, value4) in zip(dict05.items(), dict10.items(), dict15.items(), dict18.items()):
-#        writer.writerow([key1, value1,key2,  value2,key3, value3,key4,value4])
+
  
 #DATAVISUALISATION
 np.random.seed(42) #ensure visualized data is the same all the time

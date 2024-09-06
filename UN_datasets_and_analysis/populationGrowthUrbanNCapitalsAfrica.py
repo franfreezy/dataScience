@@ -21,7 +21,8 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
     country=[]
     dict18 = {}
     dict05 = {}
-    dict15={}
+    dict15 = {}
+    dict10={}
     for row in reader1:
         country.append(row[0])
 
@@ -33,17 +34,29 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
         
         if countryname in country:
             if capitalpopln in data[3]:
-                if (requireddata[1]) == '2015':  # conversion of the data into a dataframe
-                    dict15[requireddata[2]] = requireddata[3]
-                elif (requireddata[1]) == '2005':
-                    dict05[requireddata[2]] = requireddata[3]
-                elif (requireddata[1]) == '2018':
+                if (requireddata[1]) == '2018': 
                     dict18[requireddata[2]] = requireddata[3]
-print(dict18)   
-print(dict05)
-print(dict15)
+            keys=list(dict18.keys())
+            if (requireddata[1]) == '2015':
+                print(requireddata[2])
+                if (requireddata[2]) in keys:
+                    print(requireddata)
+                
 
 
+csv_file = "output.csv"
+print(keys)
+# Open the file in write mode
+#with open(csv_file, mode='w', newline='') as file:
+#    writer = csv.writer(file)
+#    
+#   
+#    writer.writerow(['City', '2005', '2010', '2015', '2018',])
+#    
+#   
+#    for (key1, value1), (key2, value2), (key3, value3), (key4, value4) in zip(dict05.items(), dict10.items(), dict15.items(), dict18.items()):
+#        writer.writerow([key1, value1,key2,  value2,key3, value3,key4,value4])
+ 
 #DATAVISUALISATION
 np.random.seed(42) #ensure visualized data is the same all the time
 city_bars = 54 # number of bars

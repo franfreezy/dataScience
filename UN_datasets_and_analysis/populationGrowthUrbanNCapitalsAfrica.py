@@ -22,30 +22,35 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
     dict18 = {}
     dict05 = {}
     dict15 = {}
-    dict10={}
+    dict10 = {}
+
     for row in reader1:
         country.append(row[0])
 
     for data in reader2:
-        countryname=data[1]
-        requireddata=[data[1],data[2],data[4],data[6]]
+        countryname = data[1]
+        
+        requireddata = [data[1], data[2], data[4], data[6]]
         capitalpopln='Capital city population (thousands)'
         
         
         if countryname in country:
+          
             if capitalpopln in data[3]:
-                if (requireddata[1]) == '2018': 
-                    dict18[requireddata[2]] = requireddata[3]
+                print(countryname,data[2])
             keys=list(dict18.keys())
+            
             if (requireddata[1]) == '2015':
-                print(requireddata[2])
-                if (requireddata[2]) in keys:
-                    print(requireddata)
+                pass
+        else:
+            pass       
+    
+           
                 
 
 
 csv_file = "output.csv"
-print(keys)
+
 # Open the file in write mode
 #with open(csv_file, mode='w', newline='') as file:
 #    writer = csv.writer(file)

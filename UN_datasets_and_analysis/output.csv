@@ -1,0 +1,221 @@
+Country,Year,City,Population
+Country,2005,city,0
+Country,2010,city,0
+Country,2015,city,0
+Country,2018,city,0
+Algeria,2005,Algiers,"2,282"
+Algeria,2010,Algiers,"2,432"
+Algeria,2015,Algiers,"2,592"
+Algeria,2018,Algiers,"2,694"
+Angola,2005,Luanda,"3,872"
+Angola,2010,Luanda,"5,300"
+Angola,2015,Luanda,"7,023"
+Angola,2018,Luanda,"7,774"
+Benin,2005,Porto-Novo,0
+Benin,2010,Porto-Novo,0
+Benin,2015,Porto-Novo,0
+Benin,2018,Porto-Novo,285
+Botswana,2005,Gaborone,0
+Botswana,2010,Gaborone,0
+Botswana,2015,Gaborone,0
+Botswana,2018,Gaborone,269
+Burkina Faso,2005,Ouagadougou,"1,328"
+Burkina Faso,2010,Ouagadougou,"1,742"
+Burkina Faso,2015,Ouagadougou,"2,200"
+Burkina Faso,2018,Ouagadougou,"2,531"
+Burundi,2005,Bujumbura,412
+Burundi,2010,Bujumbura,556
+Burundi,2015,Bujumbura,751
+Burundi,2018,Bujumbura,899
+Cabo Verde,2005,Praia,0
+Cabo Verde,2010,Praia,0
+Cabo Verde,2015,Praia,0
+Cabo Verde,2018,Praia,168
+Cameroon,2005,Yaound�,"1,781"
+Cameroon,2010,Yaound�,"2,349"
+Cameroon,2015,Yaound�,"3,097"
+Cameroon,2018,Yaound�,"3,656"
+Central African Republic,2005,Bangui,644
+Central African Republic,2010,Bangui,717
+Central African Republic,2015,Bangui,798
+Central African Republic,2018,Bangui,851
+Chad,2005,N'Djamena,827
+Chad,2010,N'Djamena,991
+Chad,2015,N'Djamena,"1,187"
+Chad,2018,N'Djamena,"1,323"
+Comoros,2005,Moroni,0
+Comoros,2010,Moroni,0
+Comoros,2015,Moroni,0
+Comoros,2018,Moroni,62
+Congo,2005,Brazzaville,"1,269"
+Congo,2010,Brazzaville,"1,576"
+Congo,2015,Brazzaville,"1,958"
+Congo,2018,Brazzaville,"2,230"
+C�te d�Ivoire,2005,Yamoussoukro,0
+C�te d�Ivoire,2010,Yamoussoukro,0
+C�te d�Ivoire,2015,Yamoussoukro,0
+C�te d�Ivoire,2018,Yamoussoukro,231
+Dem. Rep. of the Congo,2005,Kinshasa,"7,589"
+Dem. Rep. of the Congo,2010,Kinshasa,"9,382"
+Dem. Rep. of the Congo,2015,Kinshasa,"11,598"
+Dem. Rep. of the Congo,2018,Kinshasa,"13,171"
+Djibouti,2005,Djibouti,442
+Djibouti,2010,Djibouti,485
+Djibouti,2015,Djibouti,531
+Djibouti,2018,Djibouti,562
+Egypt,2005,Cairo,"15,174"
+Egypt,2010,Cairo,"16,899"
+Egypt,2015,Cairo,"18,820"
+Egypt,2018,Cairo,"20,076"
+Equatorial Guinea,2005,Malabo,0
+Equatorial Guinea,2010,Malabo,0
+Equatorial Guinea,2015,Malabo,0
+Equatorial Guinea,2018,Malabo,297
+Eritrea,2005,Asmara,558
+Eritrea,2010,Asmara,670
+Eritrea,2015,Asmara,803
+Eritrea,2018,Asmara,896
+Eswatini,2005,Mbabane,0
+Eswatini,2010,Mbabane,0
+Eswatini,2015,Mbabane,0
+Eswatini,2018,Mbabane,68
+Ethiopia,2005,Addis Ababa,"2,634"
+Ethiopia,2010,Addis Ababa,"3,126"
+Ethiopia,2015,Addis Ababa,"3,871"
+Ethiopia,2018,Addis Ababa,"4,400"
+Gabon,2005,Libreville,563
+Gabon,2010,Libreville,649
+Gabon,2015,Libreville,747
+Gabon,2018,Libreville,813
+Gambia,2005,Banjul,368
+Gambia,2010,Banjul,393
+Gambia,2015,Banjul,420
+Gambia,2018,Banjul,437
+Ghana,2005,Accra,"1,854"
+Ghana,2010,Accra,"2,060"
+Ghana,2015,Accra,"2,290"
+Ghana,2018,Accra,"2,439"
+Guinea,2005,Conakry,"1,345"
+Guinea,2010,Conakry,"1,518"
+Guinea,2015,Conakry,"1,714"
+Guinea,2018,Conakry,"1,843"
+Guinea-Bissau,2005,Bissau,336
+Guinea-Bissau,2010,Bissau,409
+Guinea-Bissau,2015,Bissau,497
+Guinea-Bissau,2018,Bissau,558
+Kenya,2005,Nairobi,"2,677"
+Kenya,2010,Nairobi,"3,237"
+Kenya,2015,Nairobi,"3,914"
+Kenya,2018,Nairobi,"4,386"
+Lesotho,2005,Maseru,0
+Lesotho,2010,Maseru,0
+Lesotho,2015,Maseru,0
+Lesotho,2018,Maseru,202
+Liberia,2005,Monrovia,"1,202"
+Liberia,2010,Monrovia,"1,056"
+Liberia,2015,Monrovia,"1,270"
+Liberia,2018,Monrovia,"1,418"
+Libya,2005,Tripoli,"1,058"
+Libya,2010,Tripoli,"1,095"
+Libya,2015,Tripoli,"1,134"
+Libya,2018,Tripoli,"1,158"
+Madagascar,2005,Antananarivo,"1,561"
+Madagascar,2010,Antananarivo,"2,021"
+Madagascar,2015,Antananarivo,"2,618"
+Madagascar,2018,Antananarivo,"3,058"
+Malawi,2005,Lilongwe,590
+Malawi,2010,Lilongwe,731
+Malawi,2015,Lilongwe,905
+Malawi,2018,Lilongwe,"1,030"
+Mali,2005,Bamako,"1,486"
+Mali,2010,Bamako,"1,886"
+Mali,2015,Bamako,"2,219"
+Mali,2018,Bamako,"2,447"
+Mauritania,2005,Nouakchott,684
+Mauritania,2010,Nouakchott,851
+Mauritania,2015,Nouakchott,"1,058"
+Mauritania,2018,Nouakchott,"1,205"
+Mauritius,2005,Port Louis,0
+Mauritius,2010,Port Louis,0
+Mauritius,2015,Port Louis,0
+Mauritius,2018,Port Louis,149
+Morocco,2005,Rabat,"1,635"
+Morocco,2010,Rabat,"1,714"
+Morocco,2015,Rabat,"1,796"
+Morocco,2018,Rabat,"1,847"
+Mozambique,2005,Maputo,"1,072"
+Mozambique,2010,Maputo,"1,097"
+Mozambique,2015,Maputo,"1,100"
+Mozambique,2018,Maputo,"1,102"
+Namibia,2005,Windhoek,268
+Namibia,2010,Windhoek,314
+Namibia,2015,Windhoek,368
+Namibia,2018,Windhoek,404
+Niger,2005,Niamey,821
+Niger,2010,Niamey,954
+Niger,2015,Niamey,"1,109"
+Niger,2018,Niamey,"1,214"
+Nigeria,2005,Abuja,"1,316"
+Nigeria,2010,Abuja,"1,814"
+Nigeria,2015,Abuja,"2,442"
+Nigeria,2018,Abuja,"2,919"
+Rwanda,2005,Kigali,668
+Rwanda,2010,Kigali,797
+Rwanda,2015,Kigali,951
+Rwanda,2018,Kigali,"1,058"
+Sao Tome and Principe,2005,Sao Tome,0
+Sao Tome and Principe,2010,Sao Tome,0
+Sao Tome and Principe,2015,Sao Tome,0
+Sao Tome and Principe,2018,Sao Tome,80
+Senegal,2005,Dakar,"2,135"
+Senegal,2010,Dakar,"2,427"
+Senegal,2015,Dakar,"2,758"
+Senegal,2018,Dakar,"2,978"
+Seychelles,2005,Victoria,0
+Seychelles,2010,Victoria,0
+Seychelles,2015,Victoria,0
+Seychelles,2018,Victoria,28
+Sierra Leone,2005,Freetown,786
+Sierra Leone,2010,Freetown,905
+Sierra Leone,2015,Freetown,"1,043"
+Sierra Leone,2018,Freetown,"1,136"
+Somalia,2005,Mogadishu,"1,415"
+Somalia,2010,Mogadishu,"1,353"
+Somalia,2015,Mogadishu,"1,783"
+Somalia,2018,Mogadishu,"2,082"
+South Africa,2005,Pretoria,"1,334"
+South Africa,2010,Pretoria,"1,666"
+South Africa,2015,Pretoria,"2,081"
+South Africa,2018,Pretoria,"2,378"
+South Sudan,2005,Juba,202
+South Sudan,2010,Juba,255
+South Sudan,2015,Juba,321
+South Sudan,2018,Juba,369
+Sudan,2005,Khartoum,"3,979"
+Sudan,2010,Khartoum,"4,517"
+Sudan,2015,Khartoum,"5,128"
+Sudan,2018,Khartoum,"5,534"
+Togo,2005,Lom�,"1,315"
+Togo,2010,Lom�,"1,466"
+Togo,2015,Lom�,"1,635"
+Togo,2018,Lom�,"1,746"
+Tunisia,2005,Tunis,"1,859"
+Tunisia,2010,Tunis,"2,014"
+Tunisia,2015,Tunis,"2,183"
+Tunisia,2018,Tunis,"2,291"
+Uganda,2005,Kampala,"1,576"
+Uganda,2010,Kampala,"2,016"
+Uganda,2015,Kampala,"2,577"
+Uganda,2018,Kampala,"2,986"
+United Rep. of Tanzania,2005,Dodoma,0
+United Rep. of Tanzania,2010,Dodoma,0
+United Rep. of Tanzania,2015,Dodoma,0
+United Rep. of Tanzania,2018,Dodoma,262
+Zambia,2005,Lusaka,"1,357"
+Zambia,2010,Lusaka,"1,723"
+Zambia,2015,Lusaka,"2,187"
+Zambia,2018,Lusaka,"2,524"
+Zimbabwe,2005,Harare,"1,450"
+Zimbabwe,2010,Harare,"1,475"
+Zimbabwe,2015,Harare,"1,500"
+Zimbabwe,2018,Harare,"1,515"

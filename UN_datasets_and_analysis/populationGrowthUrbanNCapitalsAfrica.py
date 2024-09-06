@@ -75,13 +75,19 @@ csvfile = 'popgrowthcapitals/output1.csv'
 csvfile2='popgrowthcapitals/final.csv'
 with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='') as csvfile:
     reader = csv.reader(csvfile)
+    next(reader)
     writer = csv.writer(csvfile2)
     writer.writerow(['capital', '2005', '2010', '2015', '2018'])
     dict05 = {}
     dict10 = {}
     dict15 = {}
-    dict18={}
-    for row in reader:
+    dict18 = {}
+    rows=list(reader)
+    for row in rows:
+        country = row[0]
+        city = row[2]
+        population = row[3]
+
         if row[1] == '2005':
             dict05[row[2]] = row[3]
         elif row[1] == '2010':
@@ -90,9 +96,13 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
             dict15[row[2]] = row[3]
         elif row[1] == '2018':
             dict18[row[2]]=row[3]
-    for row in reader:
-        print(row[2])
-        #writer.writerow([row[2], dict05[row[2]], dict05[row[2]], dict05[row[2]], dict05[row[2]]])
+    
+    for row in rows:
+        country = row[0]
+        city = row[2]
+
+        writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
+        
     
 
 

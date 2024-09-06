@@ -10,14 +10,15 @@ import pandas as pd
 #path to files
 countrycsv='africancounties.csv'
 datasetcsv='populationGrowthUrbanandCapitals.csv'
-
+csv_file = "capitalcityv1.csv"
 #readcsv
-with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csvfile2:
+with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csvfile2,open(csv_file, mode='w', newline='') as file:
     reader1 = csv.reader(csvfile)
     reader2 = csv.reader(csvfile2)
+    writer = csv.writer(file)
     next(reader1) #skips the header
     next(reader2)
-    
+    writer.writerow(['Country', 'year', 'city', 'population', ])
     country=[]
     dict18 = {}
     dict05 = {}
@@ -30,23 +31,25 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
     for data in reader2:
         countryname = data[1]
         
-        requireddata = [data[1], data[2], data[4], data[6]]
+
+        
+        
         capitalpopln='Capital city population (thousands)'
         
         
         if countryname in country:
-          
-            if capitalpopln in data[3]:
-                print(countryname,data[2])
-            keys=list(dict18.keys())
             
-            if (requireddata[1]) == '2015':
-                pass
-        else:
-            pass       
-    
-           
+            if data[4] !='':
                 
+                if capitalpopln in data[3]:
+                    writer.writerow([data[1], data[2], data[4], data[6]])
+                
+                    
+                    
+                
+    
+       
+               
 
 
 csv_file = "output.csv"

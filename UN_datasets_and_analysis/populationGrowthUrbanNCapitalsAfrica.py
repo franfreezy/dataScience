@@ -10,7 +10,7 @@ import pandas as pd
 #path to files
 countrycsv='africancounties.csv'
 datasetcsv='populationGrowthUrbanandCapitals.csv'
-csv_file = "capitalcityv1.csv"
+csv_file = "popgrowthcapitals/capitalcityv1.csv"
 #readcsv
 with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csvfile2,open(csv_file, mode='w', newline='') as file:
     reader1 = csv.reader(csvfile)
@@ -36,8 +36,8 @@ with open(countrycsv, newline='') as csvfile,open(datasetcsv, newline='') as csv
                 if capitalpopln in data[3]:
                     writer.writerow([data[1], data[2], data[4], data[6]])
 #version 1 csv generated
-v1csv = 'capitalcityv1.csv'
-v2csv='output.csv'
+v1csv = 'popgrowthcapitals/capitalcityv1.csv'
+v2csv='popgrowthcapitals/output.csv'
 with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as csvfile2:
     reader=csv.reader(csvfile2)
     writer = csv.writer(csvfile)
@@ -62,18 +62,38 @@ with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as cs
             writer.writerow([country, year, city, population])
     
 #refine the output with the blanks filled up                    
-v1csv = 'output.csv'
-v2csv='output1.csv'
+v1csv = 'popgrowthcapitals/output.csv'
+v2csv='popgrowthcapitals/output1.csv'
 with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as csvfile2:
     reader = list(csv.reader(csvfile2))
     writer = csv.writer(csvfile)               
     writer.writerow(['Country', 'year', 'city', 'population',])
     writer.writerows(reader[4:])
        
-               
-
-
-csv_file = "output.csv"
+#### making the data meaningful               
+csvfile = 'popgrowthcapitals/output1.csv'
+csvfile2='popgrowthcapitals/final.csv'
+with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='') as csvfile:
+    reader = csv.reader(csvfile)
+    writer = csv.writer(csvfile2)
+    writer.writerow(['capital', '2005', '2010', '2015', '2018'])
+    dict05 = {}
+    dict10 = {}
+    dict15 = {}
+    dict18={}
+    for row in reader:
+        if row[1] == '2005':
+            dict05[row[2]] = row[3]
+        elif row[1] == '2010':
+            dict10[row[2]] = row[3]
+        elif row[1] == '2015':
+            dict15[row[2]] = row[3]
+        elif row[1] == '2018':
+            dict18[row[2]]=row[3]
+    for row in reader:
+        print(row[2])
+        #writer.writerow([row[2], dict05[row[2]], dict05[row[2]], dict05[row[2]], dict05[row[2]]])
+    
 
 
  

@@ -82,6 +82,7 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
     dict10 = {}
     dict15 = {}
     dict18 = {}
+    dictfinal = {}
     rows = list(reader)
     hashlist=list()
     for row in rows:
@@ -102,13 +103,19 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
         country = row[0]
         city = row[2]
         
-        hashlist.append(hash(city))
-
-
+        
+        dictfinal[city] = [dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)]
         writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
-print(hashlist)       
+     
     
+csv_file = "output2.csv" # final, well sorted csv
 
+# Writing the dictionary to a CSV file
+with open(csv_file, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['capital', '2005', '2010', '2015', '2018'])
+    for key in list(dictfinal.keys()):
+        writer.writerow([key, dictfinal[key][0], dictfinal[key][1], dictfinal[key][2], dictfinal[key][3]])
 
  
 #DATAVISUALISATION

@@ -115,7 +115,13 @@ with open(csv_file, mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['capital', '2005', '2010', '2015', '2018'])
     for key in list(dictfinal.keys()):
-        writer.writerow([key, dictfinal[key][0], dictfinal[key][1], dictfinal[key][2], dictfinal[key][3]])
+        key1=dictfinal[key][0].replace(",", "")
+        key2=dictfinal[key][1].replace(",", "")
+        key3=dictfinal[key][2].replace(",", "")
+        key4=dictfinal[key][3].replace(",", "")
+
+
+        writer.writerow([key,key1 , key2, key3, key4])
 
  
 #DATAVISUALISATION

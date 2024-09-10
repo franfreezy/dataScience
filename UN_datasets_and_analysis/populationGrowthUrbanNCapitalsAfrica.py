@@ -72,8 +72,9 @@ with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as cs
        
 #### making the data meaningful               
 csvfile = 'popgrowthcapitals/output1.csv'
-csvfile2='popgrowthcapitals/final.csv'
-with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='') as csvfile:
+csvfile2 = 'popgrowthcapitals/final.csv'
+csvfile3= 'popgrowthcapitals/output3.csv'
+with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='') as csvfile,open(csvfile3, mode='w', newline='') as file:
     reader = csv.reader(csvfile)
     next(reader)
     writer = csv.writer(csvfile2)
@@ -105,7 +106,15 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
         
         
         dictfinal[city] = [dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)]
-        writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
+        writer.writerow([city, dict05.get(city), dict10.get(city), dict15.get(city), dict18.get(city)])
+    writer3 = csv.DictWriter(file, fieldnames=dictfinal.keys())
+    
+    writer3.writeheader()  # Write the header (keys)
+    
+    # Write rows (values)
+    for i in range(len(next(iter(dictfinal.values())))):  # Get the length of the first list
+        row = {key: dictfinal[key][i] for key in dictfinal}
+        writer3.writerow(row)
      
     
 csv_file = "popgrowthcapitals/output2.csv" # final, well sorted csv
@@ -121,7 +130,8 @@ with open(csv_file, mode='w', newline='') as file:
         key4=dictfinal[key][3].replace(",", "")
 
 
-        writer.writerow([key,key1 , key2, key3, key4])
+        writer.writerow([key, key1, key2, key3, key4])
+        
 
  
 

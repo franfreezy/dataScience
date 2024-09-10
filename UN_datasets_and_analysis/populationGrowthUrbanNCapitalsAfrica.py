@@ -113,7 +113,7 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
     
     # Write rows (values)
     for i in range(len(next(iter(dictfinal.values())))):  # Get the length of the first list
-        row = {key: dictfinal[key][i] for key in dictfinal}
+        row = {key: dictfinal[key][i].replace(",", "") for key in dictfinal}
         writer3.writerow(row)
      
     

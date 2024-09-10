@@ -7,8 +7,13 @@ df = pd.read_csv(data)
 
 actual_popln = df.copy()
 actual_popln.iloc[:, 1:]*=1000
-print(actual_popln)
 
 
+#in columns
+data='output3.csv'
+df = pd.read_csv(data)
+actual_popln2 = df.copy()
+actual_popln2*=1000
+print(actual_popln2)
 
 

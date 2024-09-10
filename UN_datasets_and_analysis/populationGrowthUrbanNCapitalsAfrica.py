@@ -124,9 +124,6 @@ with open(csv_file, mode='w', newline='') as file:
         writer.writerow([key,key1 , key2, key3, key4])
 
  
-#DATAVISUALISATION
-np.random.seed(42) #ensure visualized data is the same all the time
-city_bars = 54 # number of bars
-city_frames = 20 #rate at which they are scanned, the more, the slower.
+
 
 

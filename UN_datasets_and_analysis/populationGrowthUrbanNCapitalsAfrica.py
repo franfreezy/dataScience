@@ -82,7 +82,8 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
     dict10 = {}
     dict15 = {}
     dict18 = {}
-    rows=list(reader)
+    rows = list(reader)
+    hashlist=list()
     for row in rows:
         country = row[0]
         city = row[2]
@@ -100,9 +101,12 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
     for row in rows:
         country = row[0]
         city = row[2]
+        
+        hashlist.append(hash(city))
+
 
         writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
-        
+print(hashlist)       
     
 
 

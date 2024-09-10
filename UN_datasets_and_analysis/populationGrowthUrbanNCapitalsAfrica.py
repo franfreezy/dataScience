@@ -82,7 +82,9 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
     dict10 = {}
     dict15 = {}
     dict18 = {}
-    rows=list(reader)
+    dictfinal = {}
+    rows = list(reader)
+    hashlist=list()
     for row in rows:
         country = row[0]
         city = row[2]
@@ -100,11 +102,26 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
     for row in rows:
         country = row[0]
         city = row[2]
-
-        writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
         
+        
+        dictfinal[city] = [dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)]
+        writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
+     
     
+csv_file = "popgrowthcapitals/output2.csv" # final, well sorted csv
 
+# Writing the dictionary to a CSV file
+with open(csv_file, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['capital', '2005', '2010', '2015', '2018'])
+    for key in list(dictfinal.keys()):
+        key1=dictfinal[key][0].replace(",", "")
+        key2=dictfinal[key][1].replace(",", "")
+        key3=dictfinal[key][2].replace(",", "")
+        key4=dictfinal[key][3].replace(",", "")
+
+
+        writer.writerow([key,key1 , key2, key3, key4])
 
  
 #DATAVISUALISATION

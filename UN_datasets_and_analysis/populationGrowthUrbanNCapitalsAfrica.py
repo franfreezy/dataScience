@@ -108,7 +108,7 @@ with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='')
         writer.writerow([city, dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)])
      
     
-csv_file = "output2.csv" # final, well sorted csv
+csv_file = "popgrowthcapitals/output2.csv" # final, well sorted csv
 
 # Writing the dictionary to a CSV file
 with open(csv_file, mode='w', newline='') as file:

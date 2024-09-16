@@ -4,4 +4,6 @@ This repo will from today henceforth contain magic in terms of data analysis and
 We focus on the data from KNBS and UN.
 The goal has always been to be part of the UN family and transform the world while at it.
 
-this project uses a react, vite and django combo for the user interface
+This project uses a react, vite and django combo for the user interface
+
+[Population changes across African capital cities](https://youtu.be/DdUtOm7Y5x4)

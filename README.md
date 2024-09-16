@@ -6,4 +6,4 @@ The goal has always been to be part of the UN family and transform the world whi
 
 This project uses a react, vite and django combo for the user interface
 
-[Watch the video](https://github.com/franfreezy/dataScience/blob/Main/video1.html)
+[Watch the video](https://youtu.be/DdUtOm7Y5x4)

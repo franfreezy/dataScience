@@ -24,7 +24,7 @@ df8 = df.iloc[:, 130:150]
 df9 = df.iloc[:, 150:170]
 df10 = df.iloc[:,170:190]
 df11 = df.iloc[:,190:210]
-df12 = df.iloc[:, 210:230]
+df12 = df.iloc[:, 210:231]
 
 dfs = [df1, df2, df3, df4,df5,df6,df7,df8,df9,df10,df11,df12]
 
@@ -42,4 +42,4 @@ for i, df_part in enumerate(dfs, start=1):
         label_bars=True, 
         sort='desc'  
     )
-    
+  

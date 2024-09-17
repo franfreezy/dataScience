@@ -59,3 +59,63 @@ with open(v2csv, mode='w', newline='') as csvfile, open(v1csv, newline='') as cs
     writer.writerow(['Country', 'year', 'city', 'population',])
     writer.writerows(reader[4:])
 
+csvfile = 'output1.csv'
+csvfile2 = 'final.csv'
+csvfile3= 'output3.csv'
+with open(csvfile2, mode='w', newline='') as csvfile2, open(csvfile, newline='') as csvfile,open(csvfile3, mode='w', newline='') as file:
+    reader = csv.reader(csvfile)
+    next(reader)
+    writer = csv.writer(csvfile2)
+    writer.writerow(['capital', '2005', '2010', '2015', '2018'])
+    dict05 = {}
+    dict10 = {}
+    dict15 = {}
+    dict18 = {}
+    dictfinal = {}
+    rows = list(reader)
+    hashlist=list()
+    for row in rows:
+        country = row[0]
+        city = row[2]
+        population = row[3]
+
+        if row[1] == '2005':
+            dict05[row[2]] = row[3]
+        elif row[1] == '2010':
+            dict10[row[2]] = row[3]
+        elif row[1] == '2015':
+            dict15[row[2]] = row[3]
+        elif row[1] == '2018':
+            dict18[row[2]]=row[3]
+    
+    for row in rows:
+        country = row[0]
+        city = row[2]
+        
+        
+        dictfinal[city] = [dict05.get(city), dict10.get(city),dict15.get(city), dict18.get(city)]
+        writer.writerow([city, dict05.get(city), dict10.get(city), dict15.get(city), dict18.get(city)])
+    writer3 = csv.DictWriter(file, fieldnames=dictfinal.keys())
+    
+    writer3.writeheader()  # Write the header (keys)
+    
+    # Write rows (values)
+    for i in range(len(next(iter(dictfinal.values())))):  # Get the length of the first list
+        row = {key: dictfinal[key][i].replace(",", "") for key in dictfinal}
+        writer3.writerow(row)
+     
+    
+csv_file = "output2.csv" # final, well sorted csv
+
+# Writing the dictionary to a CSV file
+with open(csv_file, mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['capital', '2005', '2010', '2015', '2018'])
+    for key in list(dictfinal.keys()):
+        key1=dictfinal[key][0].replace(",", "")
+        key2=dictfinal[key][1].replace(",", "")
+        key3=dictfinal[key][2].replace(",", "")
+        key4=dictfinal[key][3].replace(",", "")
+
+
+        writer.writerow([key, key1, key2, key3, key4])

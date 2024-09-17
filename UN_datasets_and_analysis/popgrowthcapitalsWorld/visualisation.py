@@ -1,15 +1,6 @@
-#visualisation
 import pandas as pd
 import csv
 import bar_chart_race as bcr
-
-
-data='output2.csv'
-df = pd.read_csv(data)
-
-actual_popln = df.copy()
-actual_popln.iloc[:, 1:]*=1000
-
 
 #in columns
 data='output3.csv'
@@ -24,10 +15,18 @@ df = df.set_index('Year')
 
 df1 = df.iloc[:, :15]
 df2 = df.iloc[:,15:30]
-df3 = df.iloc[:,30:45]
-df4 = df.iloc[:,45:54]
+df3 = df.iloc[:,30:50]
+df4 = df.iloc[:, 50:70]
+df5 = df.iloc[:, 70:90]
+df6 = df.iloc[:,90:110]
+df7 = df.iloc[:,110:130]
+df8 = df.iloc[:, 130:150]
+df9 = df.iloc[:, 150:170]
+df10 = df.iloc[:,170:190]
+df11 = df.iloc[:,190:210]
+df12 = df.iloc[:, 210:230]
 
-dfs = [df1, df2, df3, df4]
+dfs = [df1, df2, df3, df4,df5,df6,df7,df8,df9,df10,df11,df12]
 
 # Loop over the list and generate bar chart races
 for i, df_part in enumerate(dfs, start=1):
@@ -44,6 +43,3 @@ for i, df_part in enumerate(dfs, start=1):
         sort='desc'  
     )
     
-
-
-

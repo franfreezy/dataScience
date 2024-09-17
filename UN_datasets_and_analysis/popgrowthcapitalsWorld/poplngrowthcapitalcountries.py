@@ -119,3 +119,6 @@ with open(csv_file, mode='w', newline='') as file:
 
 
         writer.writerow([key, key1, key2, key3, key4])
+
+df = pd.read_csv("output2.csv")
+print(len(df)) #we have 230 capital cities

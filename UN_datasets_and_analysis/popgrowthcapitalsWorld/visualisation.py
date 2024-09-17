@@ -34,11 +34,11 @@ for i, df_part in enumerate(dfs, start=1):
     bcr.bar_chart_race(
         df=df_part,
         filename=filename,  
-        title='African Capital cities population growth', 
+        title='Capital cities population growth', 
         figsize=(15, 10),  
         cmap='dark12',  
         n_bars=len(df_part.columns),   
-        period_length=1600,  
+        period_length=3000,  
         label_bars=True, 
         sort='desc'  
     )

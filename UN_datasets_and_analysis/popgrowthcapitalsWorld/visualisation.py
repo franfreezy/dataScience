@@ -42,4 +42,4 @@ for i, df_part in enumerate(dfs, start=1):
         label_bars=True, 
         sort='desc'  
     )
-  
+
